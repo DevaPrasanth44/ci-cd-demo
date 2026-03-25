@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI/CD Pipeline
 
 on:
   push:
@@ -12,8 +12,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Show files
-      run: ls
+    - name: Build project
+      run: echo "Building project..."
 
-    - name: Run test
-      run: echo "Build successful"
+    - name: Deploy
+      run: echo "Deploying project..."
